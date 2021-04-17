@@ -1,12 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
 .section1 {
     background-image: url('../assets/backgrounds/h_img.jpg');
     background-size: cover;
     text-align: center;
-    /* font-size: larger; */
+    color: white;
+    
 }
+
 .about {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 40px;
     font-family: 'Copse', serif;
+}
+#mouse-click {
+    padding-top: 22px;
+    margin-top:10%;
+    padding-bottom: 30px;
+}
+#mouse-click{
+    animation: bounce 2s infinite;
+}
+
+
+.section3 {
+    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size:18px;
+    text-align: center;
+}
+.section3 p{
+    color: white;
+ 
+}
+.section3 h2 {
+    color: white;
 }
