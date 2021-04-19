@@ -26,7 +26,7 @@
         </div>
         <!-- next section -->
         <div class="about">
-            <h2 id="about">ABOUT US</h2>
+            <h2 id="about"><strong>ABOUT US</strong></h2>
             <p>When you work with us, you are a part of committed collaborators. All aspects of our software development process are integrated, interactive and agile</p>
             <p>Our approach unifies design, development and product management to create exceptional products.</p>
             <p>We start each project by understanding your business goals, the user's needs and the product requirements.</p>
@@ -43,10 +43,10 @@
             </div>
         </div>
         <div class="container what-we-do">
-            <h2 class="what-we-do">WHAT WE DO</h2>
+            <h2 class="what-we-do"><strong>WHAT WE DO</strong></h2>
             <div class="col-md-4">
                 <div id="design" >
-                <h2 class="title">DESIGN</h2>
+                <!-- <h2 class="title">DESIGN</h2> -->
                 <P>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing</P>    
                 <p>Throughout your project, our designers create and impement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed</p>
                 </div>
@@ -59,7 +59,7 @@
         
         <div class="col-md-4">
             <div id="development" >
-                <h2 class="title">DEVELOPMENT</h2>
+                <!-- <h2 class="title">DEVELOPMENT</h2> -->
                 <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.</p>
                 <p>They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming</p>
             </div>
@@ -70,7 +70,7 @@
         </div>
         <div class="col-md-4" >
             <div id="product" >
-                <h2 class="title">PRODUCT MANAGEMENT</h2>
+                <!-- <h2 class="title">PRODUCT MANAGEMENT</h2> -->
                 <P>All engineers are fluent in the latest enterprise, mobile and web development technologies</P>
                 <p>They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming</p>
             </div>
@@ -82,7 +82,7 @@
         </div>
         <!-- portfolio section -->
         <div class="portfolio">
-            <h2>PORTFOLIO</h2>
+            <h2><strong>PORTFOLIO</strong></h2>
             <div class="row" id="portfolio" >
                 <div class="col-md-3" id="work1" >
                     <img src="assets/portfolio/work8.jpg" alt="">
@@ -121,13 +121,60 @@
 
         <!-- form -->
         <div class="container-fluid contact">
-            <h2>CONTACT US</h2>
+            <h2><strong>CONTACT US</strong></h2>
             <form id="contact" action="">
-                <input type="text" class="form-control" placeholder="Name...." size="25" value="" >
-                <input type="email" class="form-control" placeholder="Email..." autocapitalize="off" autocorrect="off" size="25" value="" >
+                <div class="form-group form-inline">
+                <input type="text" class="col-md-4 form-control" placeholder="Name..." size="20" value="" >
+                <input type="email" class="col-md-4 form-control" placeholder="Email..." autocapitalize="off" autocorrect="off" size="20" value="" >
+            </div>
+            <div class="form-group" >
+                <textarea class="form-control col-md-5" rows="8" id="comment" placeholder="Your message here..." size="45"></textarea>
+            </div>
+                <button type="submit" class="btn btn-primary col-md-1">Submit</button>
+
             </form>
         </div>
     </div>
+
+         <!-- footer section -->
+    <footer>  
+        <div class="social-media">
+        <div class="row">
+            <div class="col-md-1">
+                <img src="assets/social_icons/behance.png" alt="behance">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/facebook.png" alt="facebook">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/dribble.png" alt="dribble">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/flickr.png" alt="flickr">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/g_plus.png" alt="google plus">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/skype.png" alt="skype">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/pinterest.png" alt="pinterest">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/stumble_upon.png" alt="stumble_upon">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/twitter.png" alt="twitter">
+            </div>
+            <div class="col-md-1">
+                <img src="assets/social_icons/you_tube.png" alt="youTube">
+            </div>
+        </div>
+        <p>Delani Studio 2021 </p>
+    </div>
+</footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
