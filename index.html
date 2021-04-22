@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    
 
     <title>Delani Studio</title>
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/3.3.7/js/bootstrap.min.js">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/3.3.7/js/bootstrap.min.js">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo/logo.png" type="img/icon">
 
 
 </head>
@@ -18,20 +25,20 @@
 
               <!-- Welcome page -->
 
-        <div class="welcome">
+        <div class="welcome-header">
             <img  src="assets/logo/logo.png" alt="logo" id="logo">
             <h1>WELCOME</h1>
             <h1>TO DELANI STUDIO</h1>
             <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
-            <div class="mouse-click"></div>
-            <a href="#about-us"><img src="assets/mouse_click.png" alt="mouse_click" id="mouse-click"></a>
+            <div class="mouse-click">
+                <a href="#about-us"><img src="assets/mouse_click.png" alt="mouse_click" id="mouse-click"></a>
+            </div>
         </div>
-        </div>
+    
 
-        </div>
-        <!-- about section -->
+        <!-- about -->
 
-        <div class="about">
+        <div class="about"> 
             <h2 id="about-us"><strong>ABOUT US</strong></h2>
             <p>When you work with us, you are a part of committed collaborators. All aspects of our software development process are integrated, interactive and agile</p>
             <p>Our approach unifies design, development and product management to create exceptional products.</p>
@@ -41,7 +48,7 @@
         </div>
 
 
-        <!-- services section -->
+        <!-- services -->
 
         <div class="services">
             <div id="serviceoverlay">
@@ -88,7 +95,7 @@
             <div class="toggler" id="product" >
                 <h2 class="title">PRODUCT MANAGEMENT</h2>
                 <P>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.</P>
-                <p>This iterative process allows for changes as business requirements evolve./p>
+                <p>This iterative process allows for changes as business requirements evolve.</p>
             </div>
             <div id="product-image">
                 <img src="assets/services_icons/product_icon.png" alt="product">
@@ -98,16 +105,16 @@
         </div>
 
 
-        <!-- portfolio section -->
+        <!-- portfolio -->
 
-        <div class="container-fluid portfolio">
-            <h2><strong>PORTFOLIO</strong></h2>
+        <div class="container-fluid ">
+            <h2 class="header"><strong>PORTFOLIO</strong></h2>
             <div class="row" id="portfolio" >
                 <div class="col-md-3" id="work1" >
-                  <div class="view overlay">
+                  <!-- <div id="overlay" onMouseOver="on()"> -->
                     <img src="assets/portfolio/work8.jpg" alt="">
                     <p id="overlay1" class="text" > Giraffe <br> Restaurant</p>
-                  </div>
+                  <!-- </div> -->
                 </div>
                 <div class="col-md-3" id="work2" >
                    <div class="view overlay">
@@ -148,7 +155,7 @@
                 <div class="col-md-3" id="work8" >
                     <div class="view overlay">
                         <img src="assets/portfolio/work7.jpg" class="img-fluid" alt="Burned" >
-                        <p id="overlay8" class="text" > Logo maker</p>
+                        <p id="overlay8" class="text" > Burned <br>logo </p>
                     </div>
                 </div>
             </div>
@@ -156,20 +163,41 @@
 
 
         <!-- form -->
+        <!-- mailchimp form -->
 
         <div class="container-fluid contact">
-            <h2><strong>CONTACT US</strong></h2>
-            <form id="contact" action="">
-                <div class="form-group form-inline">
-                <input type="text" class="col-md-4 form-control" placeholder="Name..." size="20" value="" >
-                <input type="email" class="col-md-4 form-control" placeholder="Email..." autocapitalize="off" autocorrect="off" size="20" value="" >
-            </div>
-            <div class="form-group" >
-                <textarea class="form-control col-md-5" rows="8" id="comment" placeholder="Your message here..." size="45"></textarea>
-            </div>
-                <button type="button" class="btn btn-primary col-md-1">Submit</button>
-
+            <h2 class="header"><strong>CONTACT US</strong></h2>
+            <form action="https://moringaschool.us1.list-manage.com/subscribe/post?u=fe85ef9b3c51bbd7a05deb9bb&amp;id=4a31b2211b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <div class="indicates-required">
+                    <span class="asterisk">*</span>
+                </div>
+                <div class="mc-field-group form-group">
+                    <label for="mce-FNAME">Name </label>
+                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME" >
+                </div>
+                <div class="mc-field-group form-group">
+                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group form-group">
+                    <label for="mce-MMERGE2">Message </label>
+                    <input type="text" value="" name="MMERGE2" class="message" rows="7" id="mce-MMERGE2">
+                </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_fe85ef9b3c51bbd7a05deb9bb_4a31b2211b" tabindex="-1" value="">
+                    </div>
+                    <div class="clear form-group">
+                        <input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class="button">
+                    </div>
+                </div>
             </form>
+        </div>
         </div>
     </div>
 
@@ -180,42 +208,72 @@
         <div id="icon">
             <div class="row">
                 <div class="col-md-1">
+                 <a href="https://www.behance.net/search/projects?field=web%20design">
                     <img src="assets/social_icons/behance.png" alt="behance">
+                </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/facebook.png" alt="facebook">
+                    <a href="https://www.facebook.com/">
+                        <img src="assets/social_icons/facebook.png" alt="facebook">
+                    </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/dribble.png" alt="dribble">
+                    <a href="https://dribbble.com/">
+                        <img src="assets/social_icons/dribble.png" alt="dribble">
+                    </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/flickr.png" alt="flickr">
+                    <a href="https://flickr.com/">
+                        <img src="assets/social_icons/flickr.png" alt="flickr">
+                    </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/g_plus.png" alt="google plus">
+                    <a href="https://www.skype.com/en/">
+                        <img src="assets/social_icons/skype.png" alt="skype">
+                    </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/skype.png" alt="skype">
+                    <a href="https://www.pinterest.com/">
+                        <img src="assets/social_icons/pinterest.png" alt="pinterest">
+                    </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/pinterest.png" alt="pinterest">
+                    <a href="https://stumbleupon.com/">
+                        <img src="assets/social_icons/stumble_upon.png" alt="stumble_upon">
+                    </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/stumble_upon.png" alt="stumble_upon">
+                    <a href="https://twitter.com/">
+                        <img src="assets/social_icons/twitter.png" alt="twitter">
+                    </a>
                 </div>
                 <div class="col-md-1">
-                    <img src="assets/social_icons/twitter.png" alt="twitter">
-                </div>
-                <div class="col-md-1">
-                    <img src="assets/social_icons/you_tube.png" alt="youTube">
+                    <a href="https://www.youtube.com/">
+                        <img src="assets/social_icons/you_tube.png" alt="youTube">
+                    </a>
                 </div>
             </div>
         <p>Delani Studio 2021 </p>
     </div>
+        
+</div>
 </footer>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+    (function($) {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[1]='FNAME';
+        ftypes[1]='text';
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+        fnames[2]='MMERGE2';
+        ftypes[2]='text';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
     <script src="js/script.js"></script>
-    <script src="js/index.js" ></script>
 </body>
 </html>
