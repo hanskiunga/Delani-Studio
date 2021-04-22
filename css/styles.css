@@ -1,42 +1,66 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
-html {
+font-family: 'Noto Sans JP', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0.8px;
+    padding: 0.8px;
+}
+
+html, {
     scroll-behavior: smooth;
+     height: 100%;
+    
 }
 .container-fluid {
     margin: 0;
     padding: 0;
 }
-.welcome {
+
+
+.welcome-header {
     background-image: url('../assets/backgrounds/h_img.jpg');
     background-size: cover;
     text-align: center;
     color: white;
     padding-top: 13%;
+    padding: 10%;
+
+}
+
+ h1{
+    font-size:52px;
+
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 40px;
 
 }
 
 .about {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     padding-top: 40px;
-    font-family: 'Copse', serif;
+    font-size: 19px;
+   
 }
 #mouse-click {
     padding-top: 22px;
     margin-top:10%;
     padding-bottom: 30px;
+   
 }
-#mouse-click{
-    animation: bounce 2s infinite;
-}
-
 
 .services {
     background-image: url(../assets/backgrounds/s_image.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
+    width: 100%;
     background-repeat: no-repeat;
     font-size:20px;
     text-align: center;
@@ -57,15 +81,18 @@ html {
 .what-we-do .headings {
     padding-bottom: 30px;
 }
+.title{
+    font-weight: bold;
+}
 
 .toggler {
     display:none;
     padding: 10px 0;
 }
 
-/* #development, #design, #product{
+#development, #design, #product{
     display: none;
-} */
+}
 
 #portfolio {
     display: flex;
@@ -74,79 +101,92 @@ html {
     margin-left: 15%;
     margin-right:15%;
 }
-.portfolio h2 {
-    text-align: center;
-    padding: top 40px;
 
-}
 
 #overlay1, #overlay2 , #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8, #overlay9{
     display: none;
      background-color: rgba(241, 238, 238, 0.6);
-    backface-visibility: transparent;
-    color: rgb(20, 19, 18); 
-    width: 100%;
-    height: 100%;
+    background-visibility: transparent;
+    color: rgb(20, 19, 18);
+    opacity: 75%;
     position: absolute;
-    /* padding-bottom: 150%; */
     text-align: center;
     font-size: 23px;
-    top: 60px;
-    left: 0px;
+    top: 19px;
+    bottom: 0px;
+    right: 0px;
+    left: 40px;
+
 
 }
+#overlay {
+    position:fixed;
+    display:none;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(241, 238, 238, 0.6);
+    
+}
+
 
 .col-md-3 img {
-    max-width: 100%;
-    max-height: 100%;
-    padding: 20px;
+    max-width: 120%;
+    max-height: 120%;
+    padding: 15px;
 }
 .contact {
     background-image: url(../assets/backgrounds/c_image.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
-}
+} 
 .contact h2 {
-    text-align: center;
+  padding-right: 30%;
     margin-top: 30px;
     padding-bottom: 20px;
-    padding-top: 40px;
-}
-input[type=text], input[type=email],#comment{
-    background: transparent;
+    text-align: center;
     color: white;
-    font-size:20px;
 }
-button {
+
+.button { 
     margin-left: 20%;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
-.form-control::-webkit-input-placeholder{
-    color: white;
+#mc-embedded-subscribe-form{
+    /* margin: 65px; */
+    padding-bottom: 0.5px;
+    margin:  0.5px;
+    padding: 25px;
 }
+
+#mce-FNAME, #mce-EMAIL, #mce-MMERGE2{
+    background-color: white;
+    color:black;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 2%;
+}
+
+#mce-MMERGE2{
+    height: 100px;
+    width: 50%;
+}
+input[type=text]{
+    width: 40%;
+}
+
 footer{
-   
-    padding-top: 30px;
-    padding: 15px;
+
+    padding-top: 3px;
+    padding: 1px;
 }
 footer p{
     margin-top: 10px;
     text-align: center;
 }
-
-
-/* #icon {
+.form-group{
     text-align: center;
-    margin: 5em auto;
-    /* padding: 50px ; */
-    /* display: block;
-    width: 100px;
-    height: 100px;
-    
 }
-.col-md-1{
-    padding: 3px;
-    margin: 2px; }*/
