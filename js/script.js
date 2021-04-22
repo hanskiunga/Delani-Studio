@@ -91,4 +91,15 @@ $(document).ready(function() {
         $("#overlay8").hide();
     });
 });  
-  
+
+$("form#mc-embedded-subscribe-form").submit(function(){
+  var name= $("input#mce-FNAME").val();
+  var form = document.getElementsByName("mc-embedded-subscribe-form") [0];
+  if ($("input#mce-FNAME").val() && $("input#mce-FNAME").val()){
+    alert(name + ",thank you for reaching out to us.");
+    form.reset();
+    return false;
+  } else {
+    alert("Please enter your name and email address!")
+  }
+})
